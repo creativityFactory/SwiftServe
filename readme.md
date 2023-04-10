@@ -22,7 +22,7 @@ For the moment there is only jar version, we are working to provide it in form o
 - org.atteo: [evo-inflector:1.3](https://github.com/atteo/evo-inflector)
 
 ### Documentation
-* [API Javadoc](): Documentation for the current release.
+* [API Javadoc](https://creativityfactory.github.io/swiftServe-javadoc/): Documentation for the current release.
 * [User guide](UserGuide.md): This guide contains examples on how to use our framework.
 * [Design document](DesignDoc.md): This document discusses issues we faced while designing this framework.
 
