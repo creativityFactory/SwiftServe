@@ -36,7 +36,7 @@ public class ObjectMapper implements HttpRequestHandler {
         } catch (Exception exception) {
             exception.printStackTrace();
 
-            res.sendError(Response.REST_INTERNAL_SERVER_ERROR, "Malformed json format");
+            res.sendError(Response.REST_BAD_REQUEST, "Malformed json format");
             return;
         }
 
