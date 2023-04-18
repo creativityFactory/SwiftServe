@@ -1,7 +1,7 @@
 package com.creativityfactory.swiftserver.utils;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -16,16 +16,7 @@ public class FieldUtils {
      * @return A List of Field objects representing all the fields of the given class.
      */
     public static List<Field> getAllFields(Class<?> clazz) {
-        if (clazz.getSuperclass() == Object.class) {
-        // If the superclass is Object, then we only need to get the declared fields of the given class.
-            return new ArrayList<>(List.of(clazz.getDeclaredFields()));
-        }
-
-        // Recursively get all the fields of the superclass and add them to the list.
-        List<Field> fields = new ArrayList<>(getAllFields(clazz.getSuperclass()));
-        // Add the declared fields of the given class to the list.
-        fields.addAll(new ArrayList<>(List.of(clazz.getDeclaredFields())));
-        return fields;
+        return Arrays.asList(clazz.getDeclaredFields());
     }
     /**
      * Updates the fields of an old object with the fields of a new object of the same class.
