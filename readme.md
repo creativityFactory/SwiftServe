@@ -1,7 +1,7 @@
 # SwiftServe Framework
 SwiftServe framework is a web framework based on jakarta EE and follow the pattern MVC2. It can also automate the creation of web services in form of rest api basing only on models.
 
-### Goals
+### Goals 
 * Follow the pattern MVC2.
 * Robust routing.
 * Automate the creation of web services.
